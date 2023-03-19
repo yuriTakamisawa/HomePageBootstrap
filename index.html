@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  </head>
+  <body>
+    
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-success navbar-dark p-2">
+      <!-- está dentro deste container -->
+      <div class="container ">
+        <a href="" class="navbar-brand">Aprendizado & Cia</a>
+        
+        <!-- botão hamburguer, que está ligado ao navbar pelo id "navmenu" -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <!-- links -->
+        <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a href="" class="nav-link">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link">Pais</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a href="" class="nav-link">Login/Inscreva-se</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- conteudo -->
+    <section class="bg-light text-dark p-5 p-lg-0 pt-lg-5 text-center text-sm-start">
+      <div class="container">
+        <!-- flexbox -->
+        <div class="d-sm-flex align-items-center justify-content-between">
+          <div class="me-sm-5">
+            <h1>Aprenda a ler de um jeito <span class="text-warning">divertido</span></h1>
+            <p class="lead my-4">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro numquam, debitis error obcaecati.
+            </p>
+            <button class="btn btn-primary btn-lg rounded-pill">Comece agora!</button>
+    
+          </div>
+          <img class="img-fluid w-50 d-none d-sm-block" src="/images/criancas.png" alt=""> 
+        </div>
+      </div>
+    </section>
+
+    <!-- separação -->
+    <section class="bg-primary text-light p-5">
+      <div class="container text-center">
+        <div class="d-md-flex justify-content-center align-items-center">
+          <h2 class="mb-3 mb-md-0">Aprenda a ler com atividades:</h2>
+        </div>
+      </div>
+    </section>
+
+    <!-- cards -->
+
+    <section class="p-5">
+      <div class="container">
+        <div class="row gx-3 text-center">
+          <!-- card 1 -->
+          <div class="col-md mb-4">
+            <div class="card bg-dark text-light">
+              <div class="card-body text-center">
+                <div class="h1 mb-3">
+                  <i class="bi bi-hash"></i>
+                </div>
+              </div>
+              <h3 class="card-title mb-3">
+                Jogo 1
+              </h3>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia explicabo assumenda ad consequuntur, atque, ita                
+              </p>
+              <a href="" class="btn btn-primary">Jogue agora</a>
+            </div>
+          </div>
+          <!-- card 2 -->
+          <div class="col-md mb-4">
+            <div class="card bg-dark text-light">
+              <div class="card-body text-center">
+                <div class="h1 mb-3">
+                  <i class="bi bi-hash"></i>
+                </div>
+              </div>
+              <h3 class="card-title mb-3">
+                Jogo 2
+              </h3>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia explicabo assumenda ad consequuntur, atque, ita                
+              </p>
+              <a href="" class="btn btn-primary">Jogue agora</a>
+            </div>
+          </div>
+          <!-- card 3 -->
+          <div class="col-md mb-4">
+            <div class="card bg-dark text-light">
+              <div class="card-body text-center">
+                <div class="h1 mb-3">
+                  <i class="bi bi-hash"></i>
+                </div>
+              </div>
+              <h3 class="card-title mb-3">
+                Jogo 3
+              </h3>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia explicabo assumenda ad consequuntur, atque, ita                
+              </p>
+              <a href="" class="btn btn-primary">Jogue agora</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+    
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
+</html>
