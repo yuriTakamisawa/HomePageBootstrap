@@ -7,16 +7,76 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <!-- bootstrap icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    
+    <style>
+      /* fazer padding dos cards */
+      .card {
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      margin-bottom: 20px;
+      }
+
+      /* animação de crescer dos cards ao apontar com o mouse */
+      @media (max-width: 768px) {
+        .card {
+          margin-right: auto;
+          margin-left: auto;
+        }
+      }
+
+     .card:hover {
+        transform: scale(1.05);
+        transition: transform 0.5s ease;
+    }
+
+    /* eliminar estilo de hyperlink */
+    .card-text a {
+      color: #000;
+      text-decoration: none;
+    }
+
+    /* Formatação do footer, ajustar padding, tirar estilo dos hyperlinks, aumentar tamanho dos icones das redes sociais */
+    .social-links {
+      display: flex;
+    gap: 1rem;
+    }
+
+    .social-links a {
+      font-size: 2rem;
+      padding: 0.5rem;
+    }
+
+    .footer-links a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .footer-links ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .footer-links li {
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+    
+    .footer-info a {
+      color: #fff;
+      text-decoration: none;
+    }
+    </style>
+    
+    
   </head>
   <body>
-    
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg bg-success navbar-dark p-2">
+    <nav class="navbar navbar-expand-lg fixed-top bg-success navbar-dark p-2  ">
       <!-- está dentro deste container -->
       <div class="container ">
-        <a href="" class="navbar-brand">Aprendizado & Cia</a>
-        
-        <!-- botão hamburguer, que está ligado ao navbar pelo id "navmenu" -->
+        <a href="" class="navbar-brand"><img src="logo.png" alt="" style="max-height: 50px; max-width: 100%;"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -41,8 +101,9 @@
     </nav>
 
     <!-- conteudo -->
-    <section class="bg-light text-dark p-5 p-lg-0 pt-lg-5 text-center text-sm-start">
-      <div class="container">
+    <section class="bg-light text-dark p-5 p-lg-0 pt-lg-5 text-center text-sm-start" >
+      <div class="container" >
+        
         <!-- flexbox -->
         <div class="d-sm-flex align-items-center justify-content-between">
           <div class="me-sm-5">
@@ -51,83 +112,221 @@
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro numquam, debitis error obcaecati.
             </p>
             <button class="btn btn-primary btn-lg rounded-pill">Comece agora!</button>
-    
           </div>
-          <img class="img-fluid w-50 d-none d-sm-block" src="/images/criancas.png" alt=""> 
+          <img class="img-fluid w-50 d-none d-sm-block" src="undraw_family_vg76.svg" alt=""> 
         </div>
       </div>
     </section>
 
+<!-- este sobre nos comentado foi outro estilo de formato que tentei -->
+    <!-- Sobre nós
+    <section id="sobre" class="p-5">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-md">
+            <img src="images/criancas.png" class="img-fluid" alt="" />
+          </div>
+          <div class="col-md p-5">
+            <h2>Quem Somos</h2>
+            <p class="lead">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Similique deleniti possimus magnam corporis ratione facere!
+            </p>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque
+              reiciendis eius autem eveniet mollitia, at asperiores suscipit
+              quae similique laboriosam iste minus placeat odit velit quos,
+              nulla architecto amet voluptates?
+            </p>
+            <a href="#" class="btn btn-light mt-3">
+              <i class="bi bi-chevron-right"></i> Read More
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    Nosso intuito
+    <section id="intuito" class="p-5">
+      <div class="container">
+        <div class="row align-items-center justify-content-beetween">
+          <div class="col-md p-5">
+            <h2>Nosso intuito</h2>
+            <p class="lead">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Similique deleniti possimus magnam corporis ratione facere!
+            </p>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque
+              reiciendis eius autem eveniet mollitia, at asperiores suscipit
+              quae similique laboriosam iste minus placeat odit velit quos,
+              nulla architecto amet voluptates?
+            </p>
+          </div>
+          <div class="col-md">
+            <img src="images/criancas.png" class="img-fluid" alt="">
+          </div>
+        </div>
+      </div>
+    </section> -->
+    
+    
+
+    <!-- sobre nos que escolhi -->
+    <section id="sobreNos" class="p-5">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-6 align-te">
+            <h2>Sobre Nos</h2>
+            <img src="images/criancas.png" class="img-fluid rounded-4 mb-4" alt="">
+            <p>Ut fugiat ut sunt quia veniam. Voluptate perferendis perspiciatis quod nisi et. Placeat debitis quia recusandae odit et consequatur voluptatem. Dignissimos pariatur consectetur fugiat voluptas ea.</p>
+            <p>Temporibus nihil enim deserunt sed ea. Provident sit expedita aut cupiditate nihil vitae quo officia vel. Blanditiis eligendi possimus et in cum. Quidem eos ut sint rem veniam qui. Ut ut repellendus nobis tempore doloribus debitis explicabo similique sit. Accusantium sed ut omnis beatae neque deleniti repellendus.</p>
+          </div>
+          <div class="col-lg-6">
+            <div class="content ps-0 ps-lg-5">
+              <p class="fst-italic">
+                <h2>Nosso intuito</h2>
+              </p>
+              <ul>
+                <li><i class="bi bi-check-circle-fill"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                <li><i class="bi bi-check-circle-fill"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+                <li><i class="bi bi-check-circle-fill"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+              </ul>
+              <p>
+                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident
+              </p>
+    
+              <div class="position-relative mt-4">
+                <img src="images/criancas.png" class="img-fluid rounded-4" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
     <!-- separação -->
     <section class="bg-primary text-light p-5">
-      <div class="container text-center">
+      <div class="container text-center"> 
         <div class="d-md-flex justify-content-center align-items-center">
           <h2 class="mb-3 mb-md-0">Aprenda a ler com atividades:</h2>
         </div>
       </div>
     </section>
-
+   
     <!-- cards -->
-
     <section class="p-5">
       <div class="container">
-        <div class="row gx-3 text-center">
+        <div class="row gx-3 justify-content-center">
           <!-- card 1 -->
-          <div class="col-md mb-4">
-            <div class="card bg-dark text-light">
-              <div class="card-body text-center">
-                <div class="h1 mb-3">
-                  <i class="bi bi-hash"></i>
+          <div class="col-sm-4 my-3 ">
+            <div class="card h-100">
+              <a href="page1.html">
+                <img src="images/criancas.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text"><a href="page1.html">Some quick example text</a></p>
                 </div>
-              </div>
-              <h3 class="card-title mb-3">
-                Jogo 1
-              </h3>
-              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia explicabo assumenda ad consequuntur, atque, ita                
-              </p>
-              <a href="" class="btn btn-primary">Jogue agora</a>
+              </a>
             </div>
           </div>
           <!-- card 2 -->
-          <div class="col-md mb-4">
-            <div class="card bg-dark text-light">
-              <div class="card-body text-center">
-                <div class="h1 mb-3">
-                  <i class="bi bi-hash"></i>
+          <div class="col-sm-4 my-3">
+            <div class="card h-100">
+              <a href="page2.html">
+                <img src="images/criancas.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text"><a href="page2.html">Some quick example text</a></p>
                 </div>
-              </div>
-              <h3 class="card-title mb-3">
-                Jogo 2
-              </h3>
-              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia explicabo assumenda ad consequuntur, atque, ita                
-              </p>
-              <a href="" class="btn btn-primary">Jogue agora</a>
+              </a>
             </div>
           </div>
           <!-- card 3 -->
-          <div class="col-md mb-4">
-            <div class="card bg-dark text-light">
-              <div class="card-body text-center">
-                <div class="h1 mb-3">
-                  <i class="bi bi-hash"></i>
+          <div class="col-sm-4 my-3">
+            <div class="card h-100">
+              <a href="page3.html">
+                <img src="images/criancas.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text"><a href="page3.html">Some quick example text</a></p>
                 </div>
-              </div>
-              <h3 class="card-title mb-3">
-                Jogo 3
-              </h3>
-              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia explicabo assumenda ad consequuntur, atque, ita                
-              </p>
-              <a href="" class="btn btn-primary">Jogue agora</a>
+              </a>
             </div>
           </div>
         </div>
       </div>
     </section>
+        
+    <!-- footer -->
+    </footer> 
+    <footer id="footer" class="p-5 bg-dark text-white text-center position-relative">
+      <div class="container">
+        <div class="row gy-4 row-cols-1 row-cols-md-3">
+          <div class="col footer-info text-center text-md-start">
+            <a href="index.html" class="logo d-flex align-items-center">
+              <h4>Aprendizado & Cia</h4>
+            </a>
+            <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
+            
+            <div class="social-links d-flex mt-4">
+              <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+              <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+    
+          <div class="col footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><a href="#">Inicio</a></li>
+              <li><a href="#">Sobre Nos</a></li>
+              <li><a href="#">Jogos</a></li>
+            </ul>
+          </div>
+    
+          <div class="col footer-contact text-center text-md-start">
+            <h4>Fale Conosco</h4>
+            <p>
+              Rua Aguia de Haia <br>
+              São Paulo, SP 0546382<br>
+              Brasil <br><br>
+              <strong>Telefone:</strong> +55 11 97568362<br>
+              <strong>Email:</strong> info@example.com<br>
+            </p>
+          </div>
+        </div>
+      </div>
+      
+      <hr>
+      
+      <div class="container mt-4">
+        <div class="row justify-content-center">
+          <div class="col-auto">
+            <div class="copy">
+              &copy; 2023 Aprendizado &amp; Cia. Todos os direitos reservados.
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <!-- botão de subir para topo -->
+      <a href="#" class="position-absolute bottom-0 end-0 p-5" onclick="smoothScrollToTop()">
+        <i class="bi bi-arrow-up-circle h1"></i>
+      </a>
+    </footer> 
     
     
-    
+      
+  
     
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+
+      // Fazer seta do footer voltar suavemente
+    function smoothScrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    
+    </script>
   </body>
 </html>
