@@ -1,0 +1,26 @@
+/* arquivo para adicionar customização de css */
+#intro1{
+    background-color: aquamarine;
+    height: 300px;
+}
+#intro2{
+    background-color: purple;
+    height: 500px;
+}
+
+#cardSection{
+    background-color: blue;
+    height: 700px;
+}
+
+
+@media (min-width: 576px) {
+    #intro1{
+        height: 600px;
+    }
+    #intro2{
+        height: 600px;
+    }
+
+
+}
