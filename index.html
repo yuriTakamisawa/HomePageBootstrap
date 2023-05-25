@@ -17,183 +17,145 @@
   <!-- custom css -->
   <link rel="stylesheet" href="css/style.css">
 </head>
+<style>
+  #intro1,
+  #intro2 {
+    background-image: url('./img/image-buvxfvnb.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 
-<body>
+  #cards {
+    background-image: url('./img/image-1ne9a7o2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .bg-white {
+    background-color: #fff;
+  }
+
+  .card {
+    background-color: #FFA99E;
+  }
+
+  #depoimento1,
+  #depoimento2 {
+    background-color: #FFA99E;
+  }
+
+  .card-custom {
+    margin-top: -110px;
+  }
+
+  @media (max-width: 767px) {
+    .card-custom {
+      margin-top: 15px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .image-container {
+      padding: 0;
+    }
+
+    .image-container img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+
+  .image-container {
+    padding: 7% 6% 2% 6%;
+    /* Ajuste o valor do padding-bottom conforme necessário */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .image-container img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  #intro3,
+  #intro4 {
+    background-image: url('./img/image-buvxfvnb.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .custom-textarea {
+    width: 100%;
+    height: 150px;
+    resize: none;
+    /* Ajuste o valor da altura conforme necessário */
+  }
+</style>
+
+</style>
+
+<body">
   <!-- Start your project here-->
 
   <!-- navbar -->
-  <header>
-    <nav class="navbar fixed-top shadow-3-soft navbar-expand-lg navbar-light bg-light p-3">
-      <!-- Container wrapper -->
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <img src="https://mdbcdn.b-cdn.net/img/logo/mdb-transaprent-noshadows.webp" class="me-2" height="20" alt="MDB Logo" loading="lazy" />
-          <small>Aprendizado & Cia</small>
-        </a>
-        <!-- Toggle button -->
-        <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
-          data-mdb-target="#navbarRightAlignExample" aria-controls="navbarRightAlignExample" aria-expanded="false"
-          aria-label="Toggle navigation">
-          <i class="fas fa-bars"></i>
-        </button>
-  
-       
-    <!-- Collapsible wrapper -->
-    <div class="collapse navbar-collapse" id="navbarRightAlignExample">
-        <!-- Left links -->
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link " aria-current="page" href="#">Início</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link " aria-current="page" href="#">Quem somos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link " href="#">Como funciona</a>
-          </li>
-        </ul>
-        <!-- Left links -->
-        
-        <!-- Dropdown menu -->
-        <ul class="navbar-nav">
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-mdb-toggle="dropdown" aria-expanded="false">
-            <img src="/img/login.png" alt="login">
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <li><a class="dropdown-item" href="signin.html">Login</a></li>
-              <li><a class="dropdown-item" href="signup.html">Cadastrar</a></li>
+  <div class="container" style="max-width: 100%;">
+
+
+    <header>
+      <div id="topo"></div>
+      <nav class="navbar fixed-top shadow-3-soft navbar-expand-lg navbar-light bg-light p-3">
+        <!-- Container wrapper -->
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="https://mdbcdn.b-cdn.net/img/logo/mdb-transaprent-noshadows.webp" class="me-2" height="20"
+              alt="MDB Logo" loading="lazy" />
+            <small>Aprendizado & Cia</small>
+          </a>
+          <!-- Toggle button -->
+          <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+            data-mdb-target="#navbarRightAlignExample" aria-controls="navbarRightAlignExample" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+          </button>
+
+          <!-- Collapsible wrapper -->
+          <div class="collapse navbar-collapse" id="navbarRightAlignExample">
+            <!-- Left links -->
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#topo" onclick="smoothScroll('#topo')">Pagina Inicial</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Quem somos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Como funciona</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contato</a>
+              </li>
             </ul>
-          </li>
-        </ul>
-        <!-- Dropdown menu -->
-      </div>
-      <!-- Collapsible wrapper -->
-    </div>
-    <!-- Container wrapper -->
-    </nav>
-  </header>
-  <!-- navbar fim -->
-  <!-- Background image -->
-  <div class="row g-0">
-    <div class="col-md-8">
-      <div class="p-5 text-center bg-image" id="intro1">
-        <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
-          <div class="d-flex justify-content-center align-items-center h-100">
-            <div class="text-white">
-              <h1 class="mb-3">Texto Impacto</h1>
-              <h4 class="mb-3">Subheading</h4>
-              <a class="btn btn-outline-light btn-lg" href="#!" role="button">Call to action</a>
-            </div>
+            <!-- Left links -->
           </div>
+          <!-- Collapsible wrapper -->
         </div>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="p-5 text-center bg-image" id="intro2">
-        <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
-          <div class="d-flex justify-content-center align-items-center h-100">
-            <div class="text-white">
-              <h1 class="mb-3">Logo Projeto</h1>
-              <h4 class="mb-3">Subheading</h4>
-              <a class="btn btn-outline-light btn-lg" href="#!" role="button">Call to action</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+        <!-- Container wrapper -->
+      </nav>
+    </header>
 
-
-  <!-- Background image -->
-  <!-- main -->
-  <main>
-    <!-- cards -->
-    <section class="bg-primary p-5">
-      <div class="container">
-        <div class="row gx-3 justify-content-center align-items-start flex-wrap">
-          <!-- card 1 -->
-          <div class="col-lg">
-            <div class="card h-100">
-              <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/182.webp" class="card-img-top"
-                alt="Sunset Over the Sea" />
-              <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's
-                  content.</p>
-              </div>
-            </div>
-          </div>
-          <!-- card 2 -->
-          <div class="col-lg">
-            <div class="card">
-              <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/182.webp" class="card-img-top"
-                alt="Sunset Over the Sea" />
-              <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's
-                  content.</p>
-              </div>
-            </div>
-          </div>
-          <!-- card 3 -->
-          <div class="col-lg">
-            <div class="card">
-              <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/182.webp" class="card-img-top"
-                alt="Sunset Over the Sea" />
-              <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's
-                  content.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <section class="bg-primary text-light p-5">
-          <div class="container text-center">
-            <div class="d-md-flex justify-content-center align-items-center">
-              <h2 class="mb-3 mb-md-0">Texto teste</h2>
-            </div>
-          </div>
-        </section>
-      </div>
-    </section>
-
-    <section>
-      <div class="container text-center">
-        <div class="d-md-flex justify-content-center align-items-center">
-          <h2 class="mb-3 mb-md-0">Depoimentos</h2>
-        </div>
-      </div>
-      <section class="bg-warning text-light p-5">
-        <div class="container text-center">
-          <div class="row">
-            <div class="col-md-6 mb-4">
-              <div class="square-box bg-primary p-4">
-                <h2 class="mb-3">Teste</h2>
-              </div>
-            </div>
-            <div class="col-md-6 d-none d-md-block">
-              <div class="square-box bg-secondary p-4">
-                <h2 class="mb-3">Teste</h2>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section>
-        <img src="" alt="imagem de crianca">
-      </section>
-    </section>
-
-    <section>
-      <div class="row g-0">
-        <div class="col-md-6 col-12">
+    <!-- navbar fim -->
+    <!-- Background image -->
+    <main>
+      <div class="row g-0" id="fundo1">
+        <div class="col-md-8">
           <div class="p-5 text-center bg-image" id="intro1">
-            <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
+            <div class="mask">
               <div class="d-flex justify-content-center align-items-center h-100">
-                <div class="text-white">
-                  <h1 class="mb-3">Experimente!</h1>
+                <div class="text-black">
+                  <h1 class="mb-3">Texto Impacto</h1>
                   <h4 class="mb-3">Subheading</h4>
                   <a class="btn btn-outline-light btn-lg" href="#!" role="button">Call to action</a>
                 </div>
@@ -201,12 +163,12 @@
             </div>
           </div>
         </div>
-        <div class="col-md-6 col-12">
+        <div class="col-md-4">
           <div class="p-5 text-center bg-image" id="intro2">
-            <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
+            <div class="mask">
               <div class="d-flex justify-content-center align-items-center h-100">
-                <div class="text-white">
-                  <h1 class="mb-3">imagem</h1>
+                <div class="text-black">
+                  <h1 class="mb-3">Logo Projeto</h1>
                   <h4 class="mb-3">Subheading</h4>
                   <a class="btn btn-outline-light btn-lg" href="#!" role="button">Call to action</a>
                 </div>
@@ -215,186 +177,265 @@
           </div>
         </div>
       </div>
-    </section>
 
-    <section>
-      <section class="bg-primary text-light p-5">
+
+
+      <!-- Background image -->
+      <!-- main -->
+
+      <!-- cards -->
+      <section class="bg-primary p-5" id="cards">
+        <div class="container">
+          <div class="row gx-3 justify-content-center align-items-start flex-wrap mt-3">
+            <!-- card 1 -->
+            <div class="col-lg card-custom">
+              <div class="card h-100">
+                <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/182.webp" class="card-img-top"
+                  alt="Sunset Over the Sea" />
+                <div class="card-body">
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                </div>
+              </div>
+            </div>
+            <!-- card 2 -->
+            <div class="col-lg card-custom">
+              <div class="card">
+                <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/182.webp" class="card-img-top"
+                  alt="Sunset Over the Sea" />
+                <div class="card-body">
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                </div>
+              </div>
+            </div>
+            <!-- card 3 -->
+            <div class="col-lg card-custom">
+              <div class="card">
+                <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/182.webp" class="card-img-top"
+                  alt="Sunset Over the Sea" />
+                <div class="card-body">
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br><br>
         <div class="container text-center">
           <div class="d-md-flex justify-content-center align-items-center">
-            <h2 class="mb-3 mb-md-0">Fale conosco!</h2>
+            <h2 class="mb-3 mb-md-0">Escolha um jogo</h2>
           </div>
-          <p>Deixe sua pergunta</p>
-        </div>
-        <div class="container col-md-8 rounded bg-white p-5">
-          <form>
-            <!-- Name input -->
-            <div class="form-outline mb-4">
-              <input type="text" id="form4Example1" class="form-control" />
-              <label class="form-label" for="form4Example1">Name</label>
-            </div>
-
-            <!-- Email input -->
-            <div class="form-outline mb-4">
-              <input type="email" id="form4Example2" class="form-control" />
-              <label class="form-label" for="form4Example2">Email address</label>
-            </div>
-
-            <!-- Message input -->
-            <div class="form-outline mb-4">
-              <textarea class="form-control" id="form4Example3" rows="4"></textarea>
-              <label class="form-label" for="form4Example3">Message</label>
-            </div>
-
-            <!-- Submit button -->
-            <button type="submit" class="btn btn-primary btn-block mb-4">Send</button>
-          </form>
         </div>
       </section>
+
+
+      <section id="depoimentos" class="bg-white">
+        <div class="container text-center">
+          <div class="d-md-flex justify-content-center align-items-center">
+            <h2 class="mb-3 mb-md-0">Depoimentos</h2>
+          </div>
+        </div>
+        <div class="text-light p-5">
+          <div class="container text-center">
+            <div class="row gx-3 mb-5">
+              <div class="col-md-6 mb-4" id="depoimento1">
+                <div class="square-box p-4">
+                  <h2 class="mb-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus ex consequuntur
+                    doloribus ab quaerat dolorem asperiores, reprehenderit ratione nam repellat expedita delectus
+                    perferendis commodi nostrum illo quod consequatur iusto sunt?</h2>
+                </div>
+              </div>
+              <div class="col-md-6 mb-4" id="depoimento2">
+                <div class="square-box p-4">
+                  <h2 class="mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ea dolor minus
+                    delectus in, neque quia commodi explicabo itaque cumque corrupti perferendis id reprehenderit,
+                    fugiat et ut nihil</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+  </div>
+  <section style="background-image: url('./img/image-1ne9a7o2.png');">
+    <div class="image-container">
+      <img src="./img/pexels-august-de-richelieu-4260315.jpg" alt="imagem de crianca">
+    </div>
+  </section>
+
+
+  </section>
+
+  <section>
+    <div class="row g-0" id="fundo1">
+      <div class="col-md-6">
+        <div class="p-5 text-center bg-image" id="intro1">
+          <div class="mask">
+            <div class="d-flex justify-content-center align-items-center h-100">
+              <div class="text-black">
+                <h1 class="mb-3">Texto Impacto</h1>
+                <h4 class="mb-3">Subheading</h4>
+                <a class="btn btn-outline-light btn-lg" href="#!" role="button">Call to action</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="p-5 text-center bg-image" id="intro2">
+          <div class="mask">
+            <div class="d-flex justify-content-center align-items-center h-100">
+              <div class="text-black">
+                <h1 class="mb-3">Logo Projeto</h1>
+                <h4 class="mb-3">Subheading</h4>
+                <a class="btn btn-outline-light btn-lg" href="#!" role="button">Call to action</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section>
+    <section class="text-light p-5" style="background-color: #ABC777;">
+      <div class="container text-center">
+        <div class="d-md-flex justify-content-center align-items-center">
+          <h2 class="mb-3 mb-md-0">Fale conosco!</h2>
+        </div>
+        <p>Deixe sua pergunta</p>
+      </div>
+      <div class="container col-md-6 rounded-9 bg-white p-4">
+        <form>
+          <!-- Name input -->
+          <div class="form-outline mb-4">
+            <input type="text" id="form4Example1" class="form-control" />
+            <label class="form-label" for="form4Example1">Name</label>
+          </div>
+
+          <!-- Email input -->
+          <div class="form-outline mb-4">
+            <input type="email" id="form4Example2" class="form-control" />
+            <label class="form-label" for="form4Example2">Email address</label>
+          </div>
+
+          <!-- Message input -->
+          <div class="form-outline mb-4">
+            <textarea class="form-control custom-textarea" id="form4Example3" rows="4"></textarea>
+            <label class="form-label" for="form4Example3">Message</label>
+          </div>
+
+          <!-- Submit button -->
+          <button type="submit" class="btn btn-primary btn-block mb-4">Send</button>
+        </form>
+      </div>
+
     </section>
 
 
 
-    </section>
-    </section>
+
+  </section>
+  </section>
 
 
   </main>
   <!-- main fim -->
 
   <!-- footer -->
-  <footer>
-    <!-- Footer -->
-    <footer class="text-center text-lg-start bg-light text-muted">
-      <!-- Section: Social media -->
-      <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
-        <!-- Left -->
-        <div class="me-5 d-none d-lg-block">
-          <span>Get connected with us on social networks:</span>
+
+  <!-- Footer -->
+  <footer class="text-white text-center text-lg-start" id="footer" style="background-color: #FFA99E;">
+    <!-- Grid container -->
+    <div class="container p-4">
+      <!--Grid row-->
+      <div class="row">
+        <!--Grid column-->
+        <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Footer Content</h5>
+
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
+            molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae aliquam
+            voluptatem veniam, est atque cumque eum delectus sint!
+          </p>
         </div>
-        <!-- Left -->
+        <!--Grid column-->
 
-        <!-- Right -->
-        <div>
-          <a href="" class="me-4 text-reset">
-            <i class="fab fa-facebook-f"></i>
-          </a>
-          <a href="" class="me-4 text-reset">
-            <i class="fab fa-twitter"></i>
-          </a>
-          <a href="" class="me-4 text-reset">
-            <i class="fab fa-google"></i>
-          </a>
-          <a href="" class="me-4 text-reset">
-            <i class="fab fa-instagram"></i>
-          </a>
-          <a href="" class="me-4 text-reset">
-            <i class="fab fa-linkedin"></i>
-          </a>
-          <a href="" class="me-4 text-reset">
-            <i class="fab fa-github"></i>
-          </a>
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Links</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-white">Link 1</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 2</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 3</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 4</a>
+            </li>
+          </ul>
         </div>
-        <!-- Right -->
-      </section>
-      <!-- Section: Social media -->
+        <!--Grid column-->
 
-      <!-- Section: Links  -->
-      <section class="">
-        <div class="container text-center text-md-start mt-5">
-          <!-- Grid row -->
-          <div class="row mt-3">
-            <!-- Grid column -->
-            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-              <!-- Content -->
-              <h6 class="text-uppercase fw-bold mb-4">
-                <i class="fas fa-gem me-3"></i>Aprendizado & Cia
-              </h6>
-              <p>
-                Here you can use rows and columns to organize your footer content. Lorem ipsum
-                dolor sit amet, consectetur adipisicing elit.
-              </p>
-            </div>
-            <!-- Grid column -->
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-0">Links</h5>
 
-            <!-- Grid column -->
-            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-              <!-- Links -->
-              <h6 class="text-uppercase fw-bold mb-4">
-                Products
-              </h6>
-              <p>
-                <a href="#!" class="text-reset">Angular</a>
-              </p>
-              <p>
-                <a href="#!" class="text-reset">React</a>
-              </p>
-              <p>
-                <a href="#!" class="text-reset">Vue</a>
-              </p>
-              <p>
-                <a href="#!" class="text-reset">Laravel</a>
-              </p>
-            </div>
-            <!-- Grid column -->
-
-            <!-- Grid column -->
-            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-              <!-- Links -->
-              <h6 class="text-uppercase fw-bold mb-4">
-                Useful links
-              </h6>
-              <p>
-                <a href="#!" class="text-reset">Pricing</a>
-              </p>
-              <p>
-                <a href="#!" class="text-reset">Settings</a>
-              </p>
-              <p>
-                <a href="#!" class="text-reset">Orders</a>
-              </p>
-              <p>
-                <a href="#!" class="text-reset">Help</a>
-              </p>
-            </div>
-            <!-- Grid column -->
-
-            <!-- Grid column -->
-            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-              <!-- Links -->
-              <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
-              <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
-              <p>
-                <i class="fas fa-envelope me-3"></i>
-                info@example.com
-              </p>
-              <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
-              <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
-            </div>
-            <!-- Grid column -->
-          </div>
-          <!-- Grid row -->
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!" class="text-white">Link 1</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 2</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 3</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 4</a>
+            </li>
+          </ul>
         </div>
-      </section>
-      <!-- Section: Links  -->
-
-      <!-- Copyright -->
-      <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
-        © 2021 Copyright:
-        <a class="text-reset fw-bold" href="https://mdbootstrap.com/">Fatec ZL</a>
+        <!--Grid column-->
       </div>
-      <!-- Copyright -->
-    </footer>
-    <!-- Footer -->
+      <!--Grid row-->
+    </div>
+    <!-- Grid container -->
+
+
+  </footer>
+
+
+
+  <!-- Footer -->
   </footer>
   <!-- footer fim -->
-
+  </div>
 
   <!-- End your project here-->
 
   <!-- MDB -->
   <script type="text/javascript" src="js/mdb.min.js"></script>
   <!-- Custom scripts -->
-  <script type="text/javascript"></script>
-</body>
+  <script type="text/javascript">
+    function smoothScroll(topo) {
+      const element = document.querySelector(topo);
+      window.scrollTo({
+        top: element.offsetTop,
+        behavior: 'smooth'
+      });
+    }
+  </script>
+  </body>
 
 </html>
