@@ -1,0 +1,22 @@
+.canto {
+    position: relative;
+    width: 100%;
+  }
+  
+  .img_canto {
+    width: 100%;
+    height: auto;
+  }
+  
+  .centro {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .centro_img {
+    width: 200px;
+    height: auto;
+  }
+  
