@@ -119,7 +119,14 @@
 
   #conteudoDep {
     position: relative;
-    transform: translateY(130px);
+    transform: translateY(100px);
+  }
+
+  @media (max-width: 767px) {
+    #conteudoDep {
+      position: relative;
+    transform: translateY(10px);
+    }
   }
 </style>
 
@@ -137,9 +144,10 @@
     <nav class="navbar fixed-top shadow-3-soft navbar-expand-lg navbar-light bg-light p-3" style="height: 80px;">
       <!-- Container wrapper -->
       <div class="container-fluid justify-content-between">
-        <a class="navbar-brand d-flex align-items-center flex-wrap" href="#">
-          <img src="/img/login.png" class="me-2 me-sm-0" height="60" alt="MDB Logo" loading="lazy" />
+        <a class="navbar-brand d-flex align-items-center flex-wrap" href="index.html">
+          <img src="/img/logo.png" class="me-2 me-sm-0" height="60" alt="MDB Logo" loading="lazy" />
         </a>
+        
         <!-- Toggle button -->
         <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
           data-mdb-target="#navbarRightAlignExample" aria-controls="navbarRightAlignExample" aria-expanded="false"
@@ -195,9 +203,16 @@
           <div class="mask">
             <div class="d-flex justify-content-center align-items-center h-100">
               <div class="text-black">
-                <h1 class="mb-3">Texto Impacto</h1>
-                <h4 class="mb-3">Subheading</h4>
-                <a class="btn btn-outline-light btn-lg" href="#!" role="button">Call to action</a>
+                <span style="right: 220px; position: relative;" >
+                <img src="/img/Capturar-removebg-preview.png">
+                </span>
+                <span style="position: relative;">
+                  <img src="/img/small pencil.webp">
+                </span>
+                <h1 class="mb-3">Jogue e divirta-se <br> aprendendo a ler!</h1>
+                <span style="position: relative; left: 50px;"> 
+                  <img src="/img/livro2-removebg-preview.png" alt="">
+                </span>
               </div>
             </div>
           </div>
@@ -208,7 +223,8 @@
           <div class="mask">
             <div class="d-flex justify-content-center align-items-center h-100">
               <div class="text-black">
-                <h1 class="mb-3">Logo Projeto</h1>
+                <img src="/img/aviao-removebg-preview.png" alt="">
+                <img src="https://media.discordapp.net/attachments/1109957747753091145/1115788613804904498/image.png">
                 <h4 class="mb-3">Subheading</h4>
                 <a class="btn btn-outline-light btn-lg" href="#!" role="button">Call to action</a>
               </div>
@@ -293,7 +309,7 @@
     <!-- Slide 1 -->
     <div class="carousel-item active">
       <br>
-      <h2>Depoimento da Jéssica</h2>
+      <h2>Depoimentos</h2>
       <div id="conteudoDep">
         <p>Como mãe, eu estava realmente preocupada com a dificuldade que meu filho enfrentava para se familiarizar com as letras e aprender a ler. Foi então que descobri o Aprendizado & CIA, baseado em jogos educativos. Com entusiasmo, comecei a envolvê-lo nessa jornada de aprendizado, e foi incrível ver como ele se tornou mais engajado e motivado a cada atividade. Os jogos interativos e envolventes fizeram com que ele se divertisse enquanto desenvolvia suas habilidades de leitura e escrita. Hoje, tenho orgulho de dizer que meu filho está progredindo e alcançando o objetivo de se tornar um leitor confiante. O meu projeto de alfabetização online realmente fez a diferença em sua jornada educacional.</p>
       </div>
@@ -306,7 +322,7 @@
     <!-- Slide 2 -->
     <div class="carousel-item">
       <br>
-      <h2>Depoimento da Maria</h2>
+      <h2>Depoimentos</h2>
       <div id="conteudoDep">
         <p>Meu nome é Maria e estava preocupada com a dificuldade que meu filho Pedro estava enfrentando para aprender a ler. Foi então que descobri um projeto de alfabetização online baseado em jogos chamado 'ABC Aventura'. Decidi experimentar e fiquei impressionada com os resultados! Pedro se envolveu de forma entusiasmada, pois os jogos interativos e desafiadores o motivaram a progredir no aprendizado das letras. Com o 'ABC Aventura', ele passou a associar as letras a imagens e sons, o que tornou o processo de alfabetização muito mais divertido e eficaz. Hoje, vejo meu filho Pedro se destacando na leitura e estou emocionada com sua evolução. O projeto de alfabetização online fez uma grande diferença em sua jornada educacional, e sou grata por isso.</p>
       </div>
@@ -318,8 +334,7 @@
     <!-- Slide 3 -->
     <div class="carousel-item">
       <br>
-      <img src="https://static.wixstatic.com/media/c22c23_7358fc38c49f455fa9318e9387262a69~mv2.png/v1/fill/w_67,h_65,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/new%20testimonials.png" style="padding-bottom: 10px;">
-      <h2>Depoimento de uma professora</h2>
+      <h2>Depoimentos</h2>
       <div id="conteudoDep">
         <p>Na minha turma, vejo uma diversidade de níveis de leitura. Alguns alunos já conseguem ler textos com facilidade, enquanto outros, aos 8 ou 9 anos de idade, ainda não têm total familiaridade com todas as letras do alfabeto.
 
@@ -346,43 +361,6 @@
 </script>
 
 
-
-              <!-- Single item -->
-              <div class="carousel-item ">
-                <br>
-                <h2>Depoimentos</h2>
-                <div id="conteudoDep">
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem voluptatem numquam voluptatibus
-                    nam?
-                    Eos
-                    pariatur natus veritatis unde cupiditate quasi quidem quos? Inventore, accusamus provident quisquam
-                    facilis nam velit labore.</p>
-                </div>
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Nome da pessoa que fez o depoimento</h5>
-                  <p>Nome do filho</p>
-                </div>
-              </div>
-
-              <!-- Single item -->
-              <div class="carousel-item">
-                <br>
-                <h2>Depoimentos</h2>
-                <div id="conteudoDep">
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem voluptatem numquam voluptatibus
-                    nam?
-                    Eos
-                    pariatur natus veritatis unde cupiditate quasi quidem quos? Inventore, accusamus provident quisquam
-                    facilis nam velit labore.</p>
-                </div>
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Nome da pessoa que fez o depoimento</h5>
-                  <p>Nome do filho</p>
-                </div>
-              </div>
-            </div>
-            <!-- Inner -->
-
             <!-- Controls -->
             <button class="carousel-control-prev" type="button" data-mdb-target="#carouselMaterialStyle"
               data-mdb-slide="prev">
@@ -400,7 +378,7 @@
       <!-- Carousel wrapper -->
       <div class="espaco" style="margin-top: 30px;"></div>
     </section>
-
+<!-- Carrossel -->
     <section id="imagemCrianca">
       <div class="image-container">
         <img src="./img/pexels-august-de-richelieu-4260315.jpg" alt="imagem de crianca" class="d-none d-sm-block">
@@ -408,10 +386,7 @@
           class="d-block d-sm-none">
       </div>
     </section>
-
-
-    </section>
-
+    
     <section id="comoFunciona">
       <div class="row g-0" id="fundo1">
         <div class="col-md-6">
