@@ -1,19 +1,17 @@
 const express = require("express");
 const app = express();
-const handlebars = require("express-handlebars").engine
+
 const bodyParser = require("body-parser");
 const { Contatos } = require("./models/banco");
 const port = 8081;
 
-app.engine("handlebars", handlebars({ defaultLayout: "main" }))
-app.set("view engine", "handlebars")
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-app.get("/", (req, res) => {
-  res.render("index");
-});
+//app.get("/", (req, res) => {
+  //res.render("index");
+//});
 
 
 
