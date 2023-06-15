@@ -16,121 +16,9 @@
   <link rel="stylesheet" href="css/mdb.min.css" />
   <!-- custom css -->
   <link rel="stylesheet" href="css/style.css">
+
+  <link rel="stylesheet" href="./css/index.css">
 </head>
-<style>
-  body {
-    margin: 0px;
-  }
-
-
-
-  #intro1,
-  #intro2 {
-    background-image: url('./img/image-buvxfvnb.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
-  #cards {
-    background-color: #ffeab5;
-    width: 100%;
-
-  }
-
-  .bg-white {
-    background-color: #fff;
-    background-size: auto;
-  }
-
-  .card {
-    background-color: #FFA99E;
-  }
-
-  #depoimento1 {
-    background-color: #FFA99E;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  #imagemCrianca {
-    background-color: #ffeab5;
-  }
-
-  .card-custom {
-    margin-top: -110px;
-  }
-
-  @media (max-width: 767px) {
-    .card-custom {
-      margin-top: 15px;
-    }
-  }
-
-  @media (max-width: 767px) {
-    .image-container {
-      padding: 0;
-    }
-
-    .image-container img {
-      width: 100%;
-      height: auto;
-    }
-  }
-
-
-  .image-container {
-    padding: 7% 6% 2% 6%;
-    /* Ajuste o valor do padding-bottom conforme necessário */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .image-container img {
-    max-width: 100%;
-    height: auto;
-  }
-
-  #intro3,
-  #intro4 {
-    background-image: url('./img/image-buvxfvnb.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
-  .custom-textarea {
-    width: 100%;
-    height: 150px;
-    resize: none;
-    /* Ajuste o valor da altura conforme necessário */
-  }
-
-  .carousel-item {
-    height: 32rem;
-    background-color: #FFA99E;
-    color: black;
-    position: relative;
-    padding-bottom: 20px;
-
-  }
-
-
-
-  #conteudoDep {
-    position: relative;
-    transform: translateY(100px);
-  }
-
-  @media (max-width: 767px) {
-    #conteudoDep {
-      position: relative;
-    transform: translateY(10px);
-    }
-  }
-</style>
-
-</style>
 
 <body">
   <!-- Start your project here-->
@@ -147,7 +35,7 @@
         <a class="navbar-brand d-flex align-items-center flex-wrap" href="index.html">
           <img src="/img/logo.png" class="me-2 me-sm-0" height="60" alt="MDB Logo" loading="lazy" />
         </a>
-        
+
         <!-- Toggle button -->
         <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
           data-mdb-target="#navbarRightAlignExample" aria-controls="navbarRightAlignExample" aria-expanded="false"
@@ -164,7 +52,11 @@
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="#comoFunciona">Como funciona</a>
+              <a class="nav-link" href="#depoimentos">Depoimentos</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#quemSomos">Quem somos</a>
             </li>
 
             <li class="nav-item">
@@ -203,14 +95,14 @@
           <div class="mask">
             <div class="d-flex justify-content-center align-items-center h-100">
               <div class="text-black">
-                <span style="right: 220px; position: relative;" >
-                <img src="/img/Capturar-removebg-preview.png">
+                <span style="right: 220px; position: relative;">
+                  <img src="/img/Capturar-removebg-preview.png">
                 </span>
                 <span style="position: relative;">
                   <img src="/img/small pencil.webp">
                 </span>
                 <h1 class="mb-3">Jogue e divirta-se <br> aprendendo a ler!</h1>
-                <span style="position: relative; left: 50px;"> 
+                <span style="position: relative; left: 50px;">
                   <img src="/img/livro2-removebg-preview.png" alt="">
                 </span>
               </div>
@@ -225,8 +117,8 @@
               <div class="text-black">
                 <img src="/img/aviao-removebg-preview.png" alt="">
                 <img src="https://media.discordapp.net/attachments/1109957747753091145/1115788613804904498/image.png">
-                <h4 class="mb-3">Subheading</h4>
-                <a class="btn btn-outline-light btn-lg" href="#!" role="button">Call to action</a>
+
+
               </div>
             </div>
           </div>
@@ -249,7 +141,9 @@
             <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/182.webp" class="card-img-top"
               alt="Sunset Over the Sea" />
             <div class="card-body">
-              <p class="card-text"> Descubra uma maneira divertida e educativa de aprendizado com o jogo de ligar! Ajude seu filho a desenvolver habilidades de coordenação e lógica. Clique aqui para explorar o jogo agora mesmo.</p>
+              <p class="card-text"> Descubra uma maneira divertida e educativa de aprendizado com o jogo de ligar! Ajude
+                seu filho a desenvolver habilidades de coordenação e lógica. Clique aqui para explorar o jogo agora
+                mesmo.</p>
             </div>
           </div>
         </div>
@@ -259,7 +153,8 @@
             <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/182.webp" class="card-img-top"
               alt="Sunset Over the Sea" />
             <div class="card-body">
-              <p class="card-text">Desperte o interesse do seu filho pela linguagem com o jogo Silabando! Aprender a formar sílabas e palavras nunca foi tão divertido. Clique aqui para jogar junto com seu filho.</p>
+              <p class="card-text">Desperte o interesse do seu filho pela linguagem com o jogo Silabando! Aprender a
+                formar sílabas e palavras nunca foi tão divertido. Clique aqui para jogar junto com seu filho.</p>
             </div>
           </div>
         </div>
@@ -269,7 +164,8 @@
             <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/182.webp" class="card-img-top"
               alt="Sunset Over the Sea" />
             <div class="card-body">
-              <p class="card-text">Teste a memória do seu filho com o jogo da Memória! Divirta-se encontrando os pares de cartas. Clique aqui para jogar juntos.</p>
+              <p class="card-text">Teste a memória do seu filho com o jogo da Memória! Divirta-se encontrando os pares
+                de cartas. Clique aqui para jogar juntos.</p>
             </div>
           </div>
         </div>
@@ -299,66 +195,87 @@
                 aria-label="Slide 3"></button>
             </div>
 
-          <!-- Inner -->
+            <!-- Inner -->
 
-<!-- Carrossel -->
-<div id="meuCarrossel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
-  <!-- Inner -->
-  <div class="carousel-inner rounded-5">
-    
-    <!-- Slide 1 -->
-    <div class="carousel-item active">
-      <br>
-      <h2>Depoimentos</h2>
-      <div id="conteudoDep">
-        <p>Como mãe, eu estava realmente preocupada com a dificuldade que meu filho enfrentava para se familiarizar com as letras e aprender a ler. Foi então que descobri o Aprendizado & CIA, baseado em jogos educativos. Com entusiasmo, comecei a envolvê-lo nessa jornada de aprendizado, e foi incrível ver como ele se tornou mais engajado e motivado a cada atividade. Os jogos interativos e envolventes fizeram com que ele se divertisse enquanto desenvolvia suas habilidades de leitura e escrita. Hoje, tenho orgulho de dizer que meu filho está progredindo e alcançando o objetivo de se tornar um leitor confiante. O meu projeto de alfabetização online realmente fez a diferença em sua jornada educacional.</p>
-      </div>
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Jéssica Martins</h5>
-        <p>Nome do filho: Enzo Martins</p>
-      </div>
-    </div>
+            <!-- Carrossel -->
+            <div id="meuCarrossel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+              <!-- Inner -->
+              <div class="carousel-inner rounded-5 ">
 
-    <!-- Slide 2 -->
-    <div class="carousel-item">
-      <br>
-      <h2>Depoimentos</h2>
-      <div id="conteudoDep">
-        <p>Meu nome é Maria e estava preocupada com a dificuldade que meu filho Pedro estava enfrentando para aprender a ler. Foi então que descobri um projeto de alfabetização online baseado em jogos chamado 'ABC Aventura'. Decidi experimentar e fiquei impressionada com os resultados! Pedro se envolveu de forma entusiasmada, pois os jogos interativos e desafiadores o motivaram a progredir no aprendizado das letras. Com o 'ABC Aventura', ele passou a associar as letras a imagens e sons, o que tornou o processo de alfabetização muito mais divertido e eficaz. Hoje, vejo meu filho Pedro se destacando na leitura e estou emocionada com sua evolução. O projeto de alfabetização online fez uma grande diferença em sua jornada educacional, e sou grata por isso.</p>
-      </div>
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Maria santos</h5>
-        <p>Pedro Santos</p>
-      </div>
-    </div>
-    <!-- Slide 3 -->
-    <div class="carousel-item">
-      <br>
-      <h2>Depoimentos</h2>
-      <div id="conteudoDep">
-        <p>Na minha turma, vejo uma diversidade de níveis de leitura. Alguns alunos já conseguem ler textos com facilidade, enquanto outros, aos 8 ou 9 anos de idade, ainda não têm total familiaridade com todas as letras do alfabeto.
+                <!-- Slide 1 -->
+                <div class="carousel-item active">
+                  <br>
+                  <h2>Depoimentos</h2>
+                  <div id="conteudoDep">
+                    <p>Como mãe, eu estava realmente preocupada com a dificuldade que meu filho enfrentava para se
+                      familiarizar com as letras e aprender a ler. Foi então que descobri o Aprendizado & CIA, baseado
+                      em jogos educativos. Com entusiasmo, comecei a envolvê-lo nessa jornada de aprendizado, e foi
+                      incrível ver como ele se tornou mais engajado e motivado a cada atividade. Os jogos interativos e
+                      envolventes fizeram com que ele se divertisse enquanto desenvolvia suas habilidades de leitura e
+                      escrita. Hoje, tenho orgulho de dizer que meu filho está progredindo e alcançando o objetivo de se
+                      tornar um leitor confiante. O meu projeto de alfabetização online realmente fez a diferença em sua
+                      jornada educacional.</p>
+                  </div>
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Jéssica Martins</h5>
+                    <p>Nome do filho: Enzo Martins</p>
+                  </div>
+                </div>
 
-          O cenário da volta às aulas me preocupa bastante, pois estamos funcionando em um modelo híbrido, alternando entre semanas presenciais e semanas de ensino remoto, na Escola Estadual São Bento, em Belo Horizonte (MG).
-          
-          A minha preocupação é que, normalmente, na 3ª série, as crianças já estariam na fase final do aprendizado básico de leitura e escrita. No entanto, percebo que há uma lacuna significativa nesse retorno às aulas e que a alfabetização foi fortemente impactada pela pandemia. Todos os alunos deveriam estar lendo, mas infelizmente essa não é a realidade.
-          </p>
-      </div>
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Ana carolina guimarães</h5>
-      </div>
-    </div>
-  </div>
-</div>
+                <!-- Slide 2 -->
+                <div class="carousel-item">
+                  <br>
+                  <h2>Depoimentos</h2>
+                  <div id="conteudoDep">
+                    <p>Meu nome é Maria e estava preocupada com a dificuldade que meu filho Pedro estava enfrentando
+                      para aprender a ler. Foi então que descobri um projeto de alfabetização online baseado em jogos
+                      chamado 'ABC Aventura'. Decidi experimentar e fiquei impressionada com os resultados! Pedro se
+                      envolveu de forma entusiasmada, pois os jogos interativos e desafiadores o motivaram a progredir
+                      no aprendizado das letras. Com o 'ABC Aventura', ele passou a associar as letras a imagens e sons,
+                      o que tornou o processo de alfabetização muito mais divertido e eficaz. Hoje, vejo meu filho Pedro
+                      se destacando na leitura e estou emocionada com sua evolução. O projeto de alfabetização online
+                      fez uma grande diferença em sua jornada educacional, e sou grata por isso.</p>
+                  </div>
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Maria santos</h5>
+                    <p>Pedro Santos</p>
+                  </div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="carousel-item ">
+                  <br>
+                  <h2>Depoimentos</h2>
+                  <div id="conteudoDep">
+                    <p>Na minha turma, vejo uma diversidade de níveis de leitura. Alguns alunos já conseguem ler textos
+                      com facilidade, enquanto outros, aos 8 ou 9 anos de idade, ainda não têm total familiaridade com
+                      todas as letras do alfabeto.
 
-<!-- Inclua o Bootstrap JS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.0/js/bootstrap.bundle.min.js"></script>
+                      O cenário da volta às aulas me preocupa bastante, pois estamos funcionando em um modelo híbrido,
+                      alternando entre semanas presenciais e semanas de ensino remoto, na Escola Estadual São Bento, em
+                      Belo Horizonte (MG).
 
-<!-- Inicialize o carrossel -->
-<script>
-  var carousel = new bootstrap.Carousel(document.getElementById('meuCarrossel'), {
-    interval: 5000 // Intervalo de 5 segundos entre os slides
-  });
-</script>
+                      A minha preocupação é que, normalmente, na 3ª série, as crianças já estariam na fase final do
+                      aprendizado básico de leitura e escrita. No entanto, percebo que há uma lacuna significativa nesse
+                      retorno às aulas e que a alfabetização foi fortemente impactada pela pandemia. Todos os alunos
+                      deveriam estar lendo, mas infelizmente essa não é a realidade.
+                    </p>
+                  </div>
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Ana carolina guimarães</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Inclua o Bootstrap JS -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.0/js/bootstrap.bundle.min.js"></script>
+
+            <!-- Inicialize o carrossel -->
+            <script>
+              var carousel = new bootstrap.Carousel(document.getElementById('meuCarrossel'), {
+                interval: 5000 // Intervalo de 5 segundos entre os slides
+              });
+            </script>
 
 
             <!-- Controls -->
@@ -378,38 +295,49 @@
       <!-- Carousel wrapper -->
       <div class="espaco" style="margin-top: 30px;"></div>
     </section>
-<!-- Carrossel -->
+    <!-- Carrossel -->
     <section id="imagemCrianca">
-      <div class="image-container">
-        <img src="./img/pexels-august-de-richelieu-4260315.jpg" alt="imagem de crianca" class="d-none d-sm-block">
+      <div class="image-container img-fluid">
+        <img src="./img/pexels-august-de-richelieu-4260315.jpg" alt="imagem de crianca"
+          class="d-none d-sm-block shadow-2-strong">
         <img src="./img/pexels-august-de-richelieu-4260314.jpg" alt="imagem de crianca para dispositivos móveis"
           class="d-block d-sm-none">
       </div>
     </section>
-    
-    <section id="comoFunciona">
+
+    <section id="quemSomos">
       <div class="row g-0" id="fundo1">
         <div class="col-md-6">
           <div class="p-5 text-center bg-image" id="intro1">
             <div class="mask">
-              <div class="d-flex justify-content-center align-items-center h-100">
+              <div class="d-flex justify-content-center align-items-sm-start mt-5">
                 <div class="text-black">
-                  <h1 class="mb-3">Texto Impacto</h1>
-                  <h4 class="mb-3">Subheading</h4>
-                  <a class="btn btn-outline-light btn-lg" href="#!" role="button">Call to action</a>
+                  <h2 class="mb-3">Quem somos</h2>
+                  <div class="p-4 lh-lg fs-5 d-inline-block">
+                    <p class=" ">Somos uma plataforma online no campo da educação infantil, com o
+                      objetivo de
+                      mostrar que aprender
+                      a ler pode ser divertido! Com uma variedade de jogos educativos, nossos alunos podem mergulhar em
+                      histórias fascinantes, resolver desafios estimulantes e aprimorar suas habilidades linguísticas,
+                      tudo isso no conforto de suas casas. Em um mundo marcado pela pandemia de COVID-19, reconhecemos o
+                      impacto significativo que esse período desafiador teve no desenvolvimento das crianças. Com nossa
+                      plataforma interativa, estamos comprometidos em ajudar as crianças a superar esses obstáculos e
+                      alcançar seu pleno potencial.</p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+
         <div class="col-md-6">
           <div class="p-5 text-center bg-image" id="intro2">
             <div class="mask">
               <div class="d-flex justify-content-center align-items-center h-100">
                 <div class="text-black">
-                  <h1 class="mb-3">Logo Projeto</h1>
+                  <img src="" alt="">
                   <h4 class="mb-3">Subheading</h4>
-                  <a class="btn btn-outline-light btn-lg" href="#!" role="button">Call to action</a>
+
                 </div>
               </div>
             </div>
@@ -417,118 +345,72 @@
         </div>
       </div>
 
-    </section>
 
-    <section>
-      <section class="text-light p-5" style="background-color: #ABC777;" id="contato">
-        <div class="container text-center">
-          <div class="d-md-flex justify-content-center align-items-center">
-            <h2 class="mb-3 mb-md-0">Fale conosco!</h2>
+
+      <section>
+        <section class="text-light p-5" style="background-color: #ABC777;" id="contato">
+          <div class="container text-center">
+            <div class="d-md-flex justify-content-center align-items-center">
+              <h2 class="mb-3 mb-md-0">Fale conosco!</h2>
+            </div>
+            <p>Sinta-se livre para nos contatar a qualquer momento, estamos à disposição!</p>
           </div>
-          <p>Deixe sua pergunta</p>
-        </div>
-        <div class="container col-md-6 rounded-9 bg-white p-4">
-          <form>
-            <!-- Name input -->
-            <div class="form-outline mb-4">
-              <input type="text" id="form4Example1" class="form-control" />
-              <label class="form-label" for="form4Example1">Name</label>
-            </div>
+          <div class="container col-md-6 rounded-9 bg-white p-4">
+            <form action="/contato" method="options">
+              <!-- Name input -->
+              <div class="form-outline mb-4">
+                <input type="text" id="nome" name="nome" class="form-control" />
+                <label class="form-label" for="form4Example1">Nome</label>
+              </div>
 
-            <!-- Email input -->
-            <div class="form-outline mb-4">
-              <input type="email" id="form4Example2" class="form-control" />
-              <label class="form-label" for="form4Example2">Email address</label>
-            </div>
+              <!-- Email input -->
+              <div class="form-outline mb-4">
+                <input type="email" id="email" name="email" class="form-control" />
+                <label class="form-label" for="form4Example2">E-mail</label>
+              </div>
 
-            <!-- Message input -->
-            <div class="form-outline mb-4">
-              <textarea class="form-control custom-textarea" id="form4Example3" rows="4"></textarea>
-              <label class="form-label" for="form4Example3">Message</label>
-            </div>
+              <!-- Message input -->
+              <div class="form-outline mb-4">
+                <textarea class="form-control custom-textarea" id="mensagem" name="mensagem" rows="4"></textarea>
+                <label class="form-label" for="form4Example3">Mensagem</label>
+              </div>
 
-            <!-- Submit button -->
-            <button type="submit" class="btn btn-primary btn-block mb-4">Send</button>
-          </form>
-        </div>
+              <!-- Submit button -->
+              <button type="submit" class="btn btn-primary btn-block mb-4"><a href="./index.html"></a> Enviar</button>
+            </form>
+          </div>
+
+        </section>
+
 
       </section>
-
-    </section>
-    </section>
 
 
   </main>
   <!-- main fim -->
 
-  <!-- footer -->
 
-  <!-- Footer -->
-  <footer class="text-white text-center text-lg-start" id="footer" style="background-color: #FFA99E;">
+  <footer class=" text-center">
     <!-- Grid container -->
-    <div class="container p-4">
-      <!--Grid row-->
-      <div class="row">
-        <!--Grid column-->
-        <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-          <h5 class="text-uppercase">Aprenzado & Cia</h5>
-
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
-            molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae aliquam
-            voluptatem veniam, est atque cumque eum delectus sint!
-          </p>
-        </div>
-        <!--Grid column-->
-
-        <!--Grid column-->
-        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-          <h5 class="text-uppercase">Links</h5>
-
-          <ul class="list-unstyled mb-0">
-            <li>
-              <a href="#!" class="text-white">Link 1</a>
-            </li>
-            <li>
-              <a href="#!" class="text-white">Link 2</a>
-            </li>
-            <li>
-              <a href="#!" class="text-white">Link 3</a>
-            </li>
-            <li>
-              <a href="#!" class="text-white">Link 4</a>
-            </li>
-          </ul>
-        </div>
-        <!--Grid column-->
-
-        <!--Grid column-->
-        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-          <h5 class="text-uppercase mb-0">Links</h5>
-
-          <ul class="list-unstyled">
-            <li>
-              <a href="#!" class="text-white">Link 1</a>
-            </li>
-            <li>
-              <a href="#!" class="text-white">Link 2</a>
-            </li>
-            <li>
-              <a href="#!" class="text-white">Link 3</a>
-            </li>
-            <li>
-              <a href="#!" class="text-white">Link 4</a>
-            </li>
-          </ul>
-        </div>
-        <!--Grid column-->
-      </div>
-      <!--Grid row-->
+    <div class="text-center text-white pt-3">
+      <h3>Aprendizado & Cia</h3>
     </div>
-    <!-- Grid container -->
+    <div class="container p-4 pb-0">
+      <div class="d-flex justify-content-center mb-4 text-decoration-none">
+        <a href="#topo" class="mx-2 ">Inicio</a>
+        <a href="#depoimentos" class="mx-2">Depoimentos</a>
+        <a href="#quemSomos" class="mx-2">Quem Somos</a>
+        <a href="#contato" class="mx-2">Contato</a>
+      </div>
+      <!-- Grid container -->
 
-
+      <!-- Copyright -->
+      <div class="copyright  text-center p-4">
+        <a class="text-white" href="">Aprendizado & Cia 2023</a>
+      </div>
+      <!-- Copyright -->
   </footer>
+
 
 
 

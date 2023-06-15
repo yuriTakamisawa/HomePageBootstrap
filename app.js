@@ -1,20 +1,36 @@
 const express = require("express");
 const app = express();
-const expressHandlebars = require("express-handlebars");
-
-app.engine("handlebars", expressHandlebars({ defaultLayout: "main" }));
-app.set("view engine", "handlebars");
-
+const bodyParser = require("body-parser");
+const { Contatos } = require("./banco");
 const port = 8081;
 
-app.get('/', (req, res) => {
-    res.send("Servidor local ativo");
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
+
+app.get("/", (req, res) => {
+  res.render("index");
 });
 
+
+
+
+
+  app.post("/contato", function(req, res){
+        post.create({
+            nome: req.body.nome,
+            email: req.body.email,
+            mensagem: req.body.mensagem
+        }).then(function(){
+            res.redirect("/index")
+        }).catch(function(erro){
+            res.send("Falha ao cadastrar: " + erro)
+        })
+    })
+
 app.listen(port, (err) => {
-    if (err) {
-        console.error('Erro ao iniciar o servidor:', err);
-    } else {
-        console.log('Servidor ativo.');
-    }
+  if (err) {
+    console.error("Erro ao iniciar o servidor:", err);
+  } else {
+    console.log("Servidor ativo.");
+  }
 });
