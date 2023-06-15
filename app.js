@@ -1,14 +1,18 @@
 const express = require("express");
 const app = express();
+const handlebars = require("express-handlebars").engine
 const bodyParser = require("body-parser");
-const { Contatos } = require("./banco");
+const { Contatos } = require("./models/banco");
 const port = 8081;
+
+app.engine("handlebars", handlebars({ defaultLayout: "main" }))
+app.set("view engine", "handlebars")
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 app.get("/", (req, res) => {
-  res.render("index");
+  res.render("pagPrincipal.handlebars");
 });
 
 
@@ -21,7 +25,7 @@ app.get("/", (req, res) => {
             email: req.body.email,
             mensagem: req.body.mensagem
         }).then(function(){
-            res.redirect("/index")
+            res.redirect("/")
         }).catch(function(erro){
             res.send("Falha ao cadastrar: " + erro)
         })
