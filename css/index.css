@@ -145,3 +145,8 @@ body {
     font-size: 18px;
   }
 
+  .card-img-top {
+    max-height: 200px; /* Ajuste a altura conforme necessário */
+    object-fit: cover;
+  }
+
